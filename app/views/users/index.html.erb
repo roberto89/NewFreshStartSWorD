@@ -1,0 +1,16 @@
+<h1>Showing all the users !</h1>
+
+<p style="margin-left: 10px">
+  <ul>
+    <% @user.each do |user| %>
+      <li>
+        <%= gravatar_for user %>
+        <%= user.name %>
+      </li>
+      </br>
+      </br>
+      </br>
+      </br>
+    <% end %>
+  </ul>
+</p>
